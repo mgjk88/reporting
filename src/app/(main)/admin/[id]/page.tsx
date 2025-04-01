@@ -62,7 +62,7 @@ export default function Page() {
       cell: ({ row }) => {
         const val: string = row.getValue("reason");
         if(!val) return <div className="text-left font-medium"> - </div>;
-        return <div className="text-left font-medium min-w-[50px] max-w-[200px] max-h-[200px] text-pretty overflow-scroll">{val}</div>;
+        return <div className="text-left font-medium min-w-[50px] max-w-[180px] max-h-[200px] text-pretty overflow-auto">{val}</div>;
       },
     },
     {
@@ -93,7 +93,7 @@ export default function Page() {
       cell: ({ row }) => {
         const val: string = row.getValue("description");
         if(!val) return <div className="text-left font-medium"> - </div>;
-        return <div className="text-left font-medium min-w-[50px] max-w-[200px] max-h-[200px] text-pretty overflow-scroll">{val}</div>;
+        return <div className="text-left font-medium min-w-[50px] max-w-[180px] max-h-[200px] text-pretty overflow-auto">{val}</div>;
       },
     },
     {
