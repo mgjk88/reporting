@@ -1,5 +1,5 @@
 
-//run locally to seed remote db after connecting to remote db
+//run locally to seed remote db after connecting to remote db, include DATABASE_URL in .env file
 //command: node src/utils/seed.js
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();

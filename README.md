@@ -37,3 +37,8 @@ npm run start
 SECRET="YOUR_SECRET_KEY_HERE"
 DATABASE_URL="YOUR_POSTGRESQL_DATABASE_URL_HERE"
 ```
+5. (optional) seed database using seed.js by running
+```
+bash
+node src/utils/seed.js
+```
