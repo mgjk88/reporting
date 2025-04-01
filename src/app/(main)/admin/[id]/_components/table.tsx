@@ -117,7 +117,7 @@ export function DataTable<Tdata, Tvalue>({
                 data-state={row.getIsSelected() && "selected"}
               >
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell className="min-w-[50px] max-w-[200px]" key={cell.id}>
+                  <TableCell className="min-w-[50px] max-w-[200px] max-h-[100px] text-pretty overflow-scroll" key={cell.id}>
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
                 ))}
