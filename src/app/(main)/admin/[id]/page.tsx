@@ -134,7 +134,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="flex flex-col w-full justify-start pt-20 md:pt-15">
+    <div className="flex flex-col w-full justify-start pt-20 md:pt-18">
       <DataTable columns={columns} data={data} isLoading={isLoading} />
     </div>
   );
